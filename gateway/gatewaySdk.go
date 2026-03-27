@@ -156,6 +156,32 @@ func Detail(orderId string, types int) map[string]any {
 }
 
 /**
+ * Get merchant balance
+ * @returns map[string]any code,message,data
+ */
+func Balance() map[string]any {
+	result := make(map[string]any)
+	token := getToken()
+	if isnull(token) {
+		return result
+	}
+	requestUrl := "gateway/" + VERSION_NO + "/getBalance"
+	cnst := generateConstant(requestUrl)
+	bodyJson := "{}"
+	base64ReqBody := sortedAfterToBased64(bodyJson)
+	signature := createSignature(cnst, base64ReqBody)
+	encryptData := symEncrypt(base64ReqBody)
+	json := "{\"data\":\"" + encryptData + "\"}"
+	dict := post(requestUrl, token, signature, json, cnst["nonceStr"], cnst["timestamp"])
+	if !isnull(dict["code"]) && fmt.Sprintf("%v", dict["code"]) == "1" && !isnull(dict["encryptedData"]) {
+		result["data"] = SymDecrypt(dict["encryptedData"].(string))
+	}
+	result["code"] = "0"
+	result["message"] = fmt.Sprintf("%v", dict["message"])
+	return result
+}
+
+/**
  * get server token
  * @returns token
  */

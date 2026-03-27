@@ -31,6 +31,10 @@ func main() {
 	detailResult := gateway.Detail("10921", 1)
 	fmt.Println(detailResult)
 
+	// Here is an example of a balance
+	balanceResult := gateway.Balance()
+	fmt.Println(balanceResult)
+
 	// Decrypt the encrypted information in the callback
 	jsonsStr := gateway.SymDecrypt("encryptedData .........")
 	fmt.Println(jsonsStr)
