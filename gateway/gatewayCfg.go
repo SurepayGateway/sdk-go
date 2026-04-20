@@ -37,13 +37,13 @@ var CLIENT_SECRET string = "F0NfID1ftdGdu27ybGMfT3vqqCMM9gwO"
 * in developer settings : Server Public Key
  */
 var SERVER_PUB_KEY string = "-----BEGIN PUBLIC KEY-----\n" +
-	"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApkgv8hWMIReydv2wkA7z" +
-	"0cy8SLCCDN+Rnz1G50QMPF+THkRdvks5F9FBMzpJWVHpnxmj7TDUEWAc1xJDcr3b" +
-	"qkqId1cdgNeQ5KYDnER+UsVvQOkWPh3P+kDc9wvDIR6XKqeZnhtWvsYtI1cbivs/" +
-	"bTqV18iIhEE0zHLkWL7aMO/n4KcMyu0gjqnC1RdhCGRPw1iUFvoX4EIrcnhZQUe3" +
-	"KbA9Ko15EgwGLIC36KuB6iYWWnck9mRi2sWVXK3ve8rRANCWq7zQ2lxj5bSUb1I9" +
-	"2eA4/GJQubNU0ShA8Y36/MEpep5q+YNHSEe0b9L4ObP5kI7RxLAXf2+oRkSpnXmJ" +
-	"9QIDAQAB\n" +
+	"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkRLFBojK5NpMs6rRwr6v" +
+	"OYyEMQhRsX3UsqANihtumI2v/+lSyPtmQcfGGHBCdUxaW9xXGz4uzys/eZm0kxnG" +
+	"OKSgIuK4Z+07oSyRnRmpNVPb0OzJsd1Xd3zJRZfXsy/u7iKwHKLJxtAeaTLFR9Zg" +
+	"JijAe+gdDd0FT94jCCs/Lr5wskGG+QZEem6fHFl06eMCICpwwPaOS5rpfvYwElF/" +
+	"cr6ao92/WJmbQKlR+uac555U6AB5ECYwrreL22cZcAezBueB0ngdnqC+hdI0g32q" +
+	"KPxsp2EBY6Ea1JH/B3E4H4fadsNQlnhZb2MMiomKF12T4YJHY9LvFXkqhOOUpFJo" +
+	"JQIDAQAB\n" +
 	"-----END PUBLIC KEY-----"
 
 /**
